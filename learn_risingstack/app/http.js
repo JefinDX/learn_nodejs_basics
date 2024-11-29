@@ -27,6 +27,7 @@ app.listen(port, (err) => {
  * using express package with middleware
  */
 // const express = require('express')
+// const fs = require('fs')
 // const app = express()
 // const port = 3000
 // app.use((request, response, next) => {
@@ -38,6 +39,9 @@ app.listen(port, (err) => {
 //     next()
 // })
 // app.get('/', (request, response) => {
+//     fs.appendFile('users.txt', JSON.stringify({ name: 'user.name', age: 'user.age' }), (err) => {
+//         console.log('successfully registered')
+//     })
 //     response.json({
 //         chance: request.chance
 //     })
